@@ -1151,8 +1151,7 @@ public class AddressBook {
      * @return  string without the trim
      */
     private static String removePrefix(String fullString, String prefix) {
-        return fullString.replace(prefix, "");
-        //TODO
+        return fullString.replaceFirst("^" + prefix, "");
     }
 
     /**
